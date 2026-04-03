@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محرك - mo7rrk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-right">
+            <button class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+            <button class="lang-btn">EN</button>
+            <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="logo">
+            <span class="logo-text">mo7rrk</span>
+            <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>محرك البحث الذكي للسيارات</h1>
+            <p>ابحث عن سيارتك، قطع الغيار، المواصفات الفنية بالعربية والإنجليزية</p>
+            
+            <div class="search-box">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" placeholder="ابحث عن سيارة، موديل، رقم القطعة...">
+                <button class="btn-primary">بحث</button>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h3>+25</h3>
+                    <p>علامة تجارية</p>
+                </div>
+                <div class="stat-item">
+                    <h3>+109</h3>
+                    <p>موديل</p>
+                </div>
+                <div class="stat-item">
+                    <h3>+50</h3>
+                    <p>قطعة غيار</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="brands-section">
+            <div class="section-header">
+                <h2>العلامات التجارية</h2>
+                <a href="#" class="view-all">عرض الكل <i class="fa-solid fa-chevron-left"></i></a>
+            </div>
+            <p class="section-subtitle">استكشف موديلات وإصدارات كل علامة</p>
+
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <div class="brand-logo">A</div>
+                    <span>أودي</span>
+                    <small>ألمانيا</small>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">B</div>
+                    <span>بي إم دبليو</span>
+                    <small>ألمانيا</small>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">C</div>
+                    <span>شانجان</span>
+                    <small>الصين</small>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">C</div>
+                    <span>شفروليه</span>
+                    <small>أمريكا</small>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">F</div>
+                    <span>فورد</span>
+                    <small>أمريكا</small>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">T</div>
+                    <span>تويوتا</span>
+                    <small>اليابان</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <h2 class="text-center mb-4">ماذا يمكنك فعله في محرك؟</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>بحث ذكي</h3>
+                    <p>ابحث بالعربية أو الإنجليزية عن أي سيارة أو قطعة غيار مع دعم الأخطاء الإملائية.</p>
+                    <a href="#">استكشف +</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3>مقارنة السيارات</h3>
+                    <p>قارن بين إصدارين جنباً إلى جنب مع عرض كامل للمواصفات التقنية.</p>
+                    <a href="#">استكشف +</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-wrench"></i></div>
+                    <h3>قطع الغيار</h3>
+                    <p>ابحث برقم القطعة أو الاسم واعرف السيارات المتوافقة والبدائل الأصلية.</p>
+                    <a href="#">استكشف +</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <span class="logo-text">mo7rrk</span>
+            <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+        </div>
+        <p class="footer-desc">منصة البحث التقني للسيارات. معلومات دقيقة ومنظمة عن السيارات وقطع الغيار للسوق العربي.</p>
+        
+        <div class="footer-links">
+            <div class="link-column">
+                <h4>استكشاف</h4>
+                <a href="#">العلامات التجارية</a>
+                <a href="#">مقارنة السيارات</a>
+                <a href="#">قطع الغيار</a>
+                <a href="#">المدونة التقنية</a>
+            </div>
+            <div class="link-column">
+                <h4>العلامات التجارية</h4>
+                <a href="#">تويوتا</a>
+                <a href="#">هيونداي</a>
+                <a href="#">نيسان</a>
+                <a href="#">كيا</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 mo7rrk (محرك). جميع الحقوق محفوظة.</p>
+            <span class="version">v1.0.0 MVP</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
