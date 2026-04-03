@@ -1,0 +1,351 @@
+/* --- المتغيرات الأساسية (عشان يسهل التعديل) --- */
+:root {
+    --bg-main: #0a0e17;       /* لون الخلفية الأساسي */
+    --bg-card: #121824;       /* لون الكروت */
+    --bg-input: #1a2235;      /* لون حقول الإدخال */
+    --primary-blue: #3b82f6;  /* الأزرق الأساسي */
+    --text-light: #ffffff;    /* النص الأساسي */
+    --text-muted: #9ca3af;    /* النص الثانوي */
+    --border-color: #1f2937;  /* لون الحدود */
+    --font-main: 'Cairo', sans-serif;
+}
+
+/* --- إعدادات عامة --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-light);
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- الشريط العلوي (Navbar) --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 1px solid var(--border-color);
+    background-color: rgba(10, 14, 23, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon-btn, .lang-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.lang-btn {
+    border: 1px solid var(--border-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    background-color: var(--primary-blue);
+    color: white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* --- القسم الرئيسي (Hero) --- */
+.hero {
+    text-align: center;
+    padding: 60px 5% 40px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.search-box {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    background-color: var(--bg-main);
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.search-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    padding: 10px 40px 10px 15px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-family: var(--font-main);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+/* --- الإحصائيات --- */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.stat-item h3 {
+    color: var(--primary-blue);
+    font-size: 1.8rem;
+}
+
+.stat-item p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* --- العلامات التجارية --- */
+.brands-section, .features-section {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-all {
+    color: var(--primary-blue);
+    font-size: 0.9rem;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.brand-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.brand-card:hover {
+    border-color: var(--primary-blue);
+    transform: translateY(-3px);
+}
+
+.brand-logo {
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-input);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.brand-card span {
+    display: block;
+    font-weight: 600;
+}
+
+.brand-card small {
+    color: var(--text-muted);
+}
+
+/* --- كروت الخدمات (Features) --- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    border-color: var(--text-muted);
+}
+
+.feature-icon {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.feature-card a {
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.text-center { text-align: center; }
+.mb-4 { margin-bottom: 25px; }
+
+/* --- الفوتر --- */
+footer {
+    background-color: var(--bg-main);
+    border-top: 1px solid var(--border-color);
+    padding: 40px 5% 20px;
+    margin-top: 50px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.footer-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.link-column h4 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.link-column a {
+    display: block;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.link-column a:hover {
+    color: var(--text-light);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.version {
+    color: var(--primary-blue);
+}
+
+/* --- استجابة للشاشات الصغيرة (Mobile) --- */
+@media (max-width: 768px) {
+    .stats-container {
+        gap: 20px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
